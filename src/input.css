@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    body {
+        @apply overflow-x-hidden
+    }
+    p {
+        @apply text-gray
+    }
+}
+
+@layer components {
+    .requirementsItem{
+        @apply bg-white md:bg-transparent p-5 rounded-md min-h-[250px]
+    }
+}
+
+.header nav ul li a{
+    padding: 0.5rem;
+    @apply hover:text-secondary hover:border-b-2 hover:border-secondary
+}
+.tns-controls button:first-child{
+    @apply hidden xl:block absolute top-[50%] z-10 left-[5%] bg-white rounded-full w-10 h-10 
+}
+.tns-controls button:last-child{
+    @apply hidden xl:block absolute top-[50%] z-10 right-[5%] bg-white rounded-full w-10 h-10 
+}
+
+.marketItemList img{
+    @apply md:w-[100px] h-[100px]
+    
+}
+.playstore img {
+    @apply w-[168px] h-[48px]
+}
+
+.mobileDownloads {
+    @apply md:grid grid-cols-[2fr,1fr] bg-cover rounded-3xl xl:w-[1000px] mx-auto md:w-auto h-auto
+}
+
+.partners img {
+    @apply w-[180px] h-[120px]
+}
